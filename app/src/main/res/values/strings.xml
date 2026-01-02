@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ReelCounter</string>
+    <string name="accessibility_service_description">ReelCounter helps you track your Instagram Reel usage for digital wellbeing. It only monitors scroll events in Instagram Reels to count how many reels you view. No data is collected, stored in the cloud, or shared. All data stays on your device.</string>
+    <string name="widget_description">Display today\'s reel count on your home screen</string>
+</resources>
