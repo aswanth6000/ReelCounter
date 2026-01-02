@@ -40,7 +40,7 @@ _Add screenshots here if available_
 
 **Quick Download**
 
-[![Download Reel Counter](https://img.shields.io/badge/Download-Reel%20Counter%20v1.0-green?style=for-the-badge&logo=android)](https://github.com/aswanth6000/ReelCounter/releases/download/v1.0/Reel%20Counter.apk)
+[![Download Reel Counter](https://img.shields.io/badge/Download-Reel%20Counter%20v1.0-green?style=for-the-badge&logo=android)](https://github.com/aswanth6000/ReelCounter/raw/main/app/release/Reel%20Counter.apk)
 
 **GitHub Releases**
 
@@ -60,13 +60,13 @@ _Add screenshots here if available_
 
 **Direct Raw File Link**
 
-If you want to link directly to the file in the repository:
+Direct download link to the APK file in the repository:
 
 ```
-https://github.com/aswanth6000/ReelCounter/raw/main/app/release/app-release.apk
+https://github.com/aswanth6000/ReelCounter/raw/main/app/release/Reel%20Counter.apk
 ```
 
-> **Note**: After downloading, you may want to rename the file to `Reel Counter.apk` for clarity.
+> **Note**: This link works immediately and downloads the `Reel Counter.apk` file directly from the repository.
 
 **Build from Source**
 
