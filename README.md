@@ -38,9 +38,11 @@ _Add screenshots here if available_
 
 ### Latest Release (v1.0)
 
-**Recommended: GitHub Releases**
+**Quick Download**
 
-The best way to distribute the APK is through GitHub Releases:
+[![Download Reel Counter](https://img.shields.io/badge/Download-Reel%20Counter%20v1.0-green?style=for-the-badge&logo=android)](https://github.com/aswanth6000/ReelCounter/releases/download/v1.0/Reel%20Counter.apk)
+
+**GitHub Releases**
 
 1. **Create a Release**:
 
@@ -48,21 +50,23 @@ The best way to distribute the APK is through GitHub Releases:
    - Click "Releases" → "Create a new release"
    - Tag: `v1.0`
    - Title: `ReelCounter v1.0`
-   - Upload `app/release/app-release.apk` as an asset
+   - Upload `app/release/app-release.apk` and rename it to `Reel Counter.apk` as an asset
    - Publish the release
 
 2. **Download from Releases**:
-   - Visit: `https://github.com/aswanth6000/ReelCounter/releases`
+   - Visit: [Releases Page](https://github.com/aswanth6000/ReelCounter/releases)
    - Click on the latest release
-   - Download `app-release.apk` from the assets section
+   - Download `Reel Counter.apk` from the assets section
 
-**Alternative: Direct Raw File Link**
+**Direct Raw File Link**
 
 If you want to link directly to the file in the repository:
 
 ```
 https://github.com/aswanth6000/ReelCounter/raw/main/app/release/app-release.apk
 ```
+
+> **Note**: After downloading, you may want to rename the file to `Reel Counter.apk` for clarity.
 
 **Build from Source**
 
@@ -77,7 +81,7 @@ Alternatively, you can build the APK yourself - see the [Building from Source](#
 
 2. **Download the APK**:
 
-   - Download `app-release.apk` from the releases section
+   - Download `Reel Counter.apk` from the releases section
 
 3. **Install the App**:
 
@@ -189,6 +193,7 @@ The app uses heuristic-based detection to identify Reel scrolls:
 
 5. Find the APK:
    - Location: `app/build/outputs/apk/release/app-release.apk`
+   - You can rename it to `Reel Counter.apk` after building
 
 ## 📋 Permissions
 
