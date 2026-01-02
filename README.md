@@ -13,7 +13,7 @@ A privacy-first Android app that tracks your Instagram Reel usage for digital we
 - **Weekly Summaries**: View your weekly total and daily average
 - **7-Day History**: Track your usage over the past week
 - **Home Screen Widget**: Quick access to today's count on your home screen
-- **Privacy First**: 
+- **Privacy First**:
   - No internet permission
   - No data collection
   - No cloud storage
@@ -32,36 +32,61 @@ ReelCounter is designed with privacy as the top priority:
 
 ## 📱 Screenshots
 
-*Add screenshots here if available*
+_Add screenshots here if available_
 
 ## 📥 Download
 
 ### Latest Release (v1.0)
 
-**Download the APK:**
+**Recommended: GitHub Releases**
 
-The release APK is located at: `app/release/app-release.apk`
+The best way to distribute the APK is through GitHub Releases:
 
-For GitHub releases, upload the APK to the [Releases](../../releases) page and link it here.
+1. **Create a Release**:
 
-**Direct Download:**
-- [Download ReelCounter v1.0 APK](app/release/app-release.apk) *(if viewing on GitHub, check Releases page)*
+   - Go to your repository on GitHub
+   - Click "Releases" → "Create a new release"
+   - Tag: `v1.0`
+   - Title: `ReelCounter v1.0`
+   - Upload `app/release/app-release.apk` as an asset
+   - Publish the release
+
+2. **Download from Releases**:
+   - Visit: `https://github.com/aswanth6000/ReelCounter/releases`
+   - Click on the latest release
+   - Download `app-release.apk` from the assets section
+
+**Alternative: Direct Raw File Link**
+
+If you want to link directly to the file in the repository:
+
+```
+https://github.com/aswanth6000/ReelCounter/raw/main/app/release/app-release.apk
+```
+
+**Build from Source**
+
+Alternatively, you can build the APK yourself - see the [Building from Source](#-building-from-source) section below.
 
 ### Installation Instructions
 
 1. **Enable Unknown Sources** (if not already enabled):
+
    - Go to Settings → Security → Enable "Install unknown apps" or "Unknown sources"
    - Select your file manager/browser to allow installations
 
 2. **Download the APK**:
+
    - Download `app-release.apk` from the releases section
 
 3. **Install the App**:
+
    - Open the downloaded APK file
    - Tap "Install" when prompted
    - Wait for installation to complete
 
 4. **Enable Accessibility Service**:
+
    - Open the ReelCounter app
    - Tap "Open Settings" when prompted
    - Find "ReelCounter" in the accessibility services list
@@ -75,15 +100,18 @@ For GitHub releases, upload the APK to the [Releases](../../releases) page and l
 ## 🚀 How to Use
 
 1. **First Launch**:
+
    - The app will request accessibility permission
    - Follow the on-screen instructions to enable it
 
 2. **View Your Stats**:
+
    - Today's count is displayed prominently
    - Weekly totals and averages are shown below
    - Scroll down to see the last 7 days breakdown
 
 3. **Add Widget** (Optional):
+
    - Long-press on your home screen
    - Select "Widgets"
    - Find "ReelCounter"
@@ -121,6 +149,7 @@ For GitHub releases, upload the APK to the [Releases](../../releases) page and l
 ### Detection Logic
 
 The app uses heuristic-based detection to identify Reel scrolls:
+
 - Checks for "Reels" text in UI tree
 - Looks for Reel-specific UI elements (Like, Comment, Share buttons)
 - Identifies full-screen vertical video layouts
@@ -139,18 +168,22 @@ The app uses heuristic-based detection to identify Reel scrolls:
 ### Build Steps
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/yourusername/ReelCounter.git
+   git clone https://github.com/aswanth6000/ReelCounter.git
    cd ReelCounter
    ```
 
 2. Open in Android Studio:
+
    - File → Open → Select the project directory
 
 3. Sync Gradle:
+
    - Android Studio will automatically sync, or click "Sync Now"
 
 4. Build the APK:
+
    - Build → Build Bundle(s) / APK(s) → Build APK(s)
    - Or use: `./gradlew assembleRelease`
 
@@ -167,6 +200,7 @@ ReelCounter requires the following permissions:
   - No data is collected or shared
 
 **Explicitly Removed**:
+
 - ❌ Internet Permission (removed for privacy)
 
 ## ⚠️ Limitations
@@ -199,12 +233,14 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📧 Support
 
 For issues, questions, or suggestions:
+
 - Open an issue on GitHub
 - Check existing issues for solutions
 
 ## 🔄 Changelog
 
 ### Version 1.0 (Initial Release)
+
 - ✅ Automatic Reel detection via Accessibility API
 - ✅ Daily and weekly tracking
 - ✅ 7-day history view
@@ -218,5 +254,4 @@ For issues, questions, or suggestions:
 
 **Made with ❤️ for digital wellbeing awareness**
 
-*Remember: This app is for awareness and self-reflection. Use it to understand your usage patterns, not to judge yourself.*
-
+_Remember: This app is for awareness and self-reflection. Use it to understand your usage patterns, not to judge yourself._
