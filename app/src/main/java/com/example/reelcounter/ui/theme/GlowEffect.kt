@@ -1,4 +1,4 @@
-package com.example.reelcounter.ui.theme
+package com.reelcounter.ui.theme
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -14,7 +14,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.unit.dp
-import com.example.reelcounter.ui.theme.BrightGreen
+import com.reelcounter.ui.theme.BrightGreen
 
 /**
  * Creates a glow effect around a composable using shadow layers.

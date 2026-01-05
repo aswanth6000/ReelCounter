@@ -1,9 +1,9 @@
-package com.example.reelcounter.worker
+package com.reelcounter.worker
 
 import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.example.reelcounter.data.ReelRepository
+import com.reelcounter.data.ReelRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

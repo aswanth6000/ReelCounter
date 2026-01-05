@@ -1,4 +1,4 @@
-package com.example.reelcounter.ui.theme
+package com.reelcounter.ui.theme
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,8 +13,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import com.example.reelcounter.data.ReelRepository
-import com.example.reelcounter.utils.AccessibilityUtils
+import com.reelcounter.data.ReelRepository
+import com.reelcounter.utils.AccessibilityUtils
 
 class MainActivity : ComponentActivity() {
     private val serviceName by lazy { "${packageName}.accessibility.ReelAccessibilityService" }
@@ -32,6 +32,7 @@ class MainActivity : ComponentActivity() {
                 )
             }
             var checkKey by remember { mutableStateOf(0) }
+            var showPrivacyPolicy by remember { mutableStateOf(false) }
             
             // Check permission on startup and when checkKey changes
             LaunchedEffect(checkKey) {
@@ -40,21 +41,31 @@ class MainActivity : ComponentActivity() {
             
             ReelCounterTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    if (isServiceEnabled) {
-                        DashboardScreen(
-                            repository = repository,
-                            modifier = Modifier.padding(innerPadding)
-                        )
-                    } else {
-                        PermissionRequestScreen(
-                            onRequestPermission = {
-                                AccessibilityUtils.openAccessibilitySettings(this@MainActivity)
-                            },
-                            onCheckAgain = {
-                                checkKey++ // Trigger LaunchedEffect to re-check
-                            },
-                            modifier = Modifier.padding(innerPadding)
-                        )
+                    when {
+                        showPrivacyPolicy -> {
+                            PrivacyPolicyScreen(
+                                onBack = { showPrivacyPolicy = false },
+                                modifier = Modifier.padding(innerPadding)
+                            )
+                        }
+                        isServiceEnabled -> {
+                            DashboardScreen(
+                                repository = repository,
+                                onShowPrivacyPolicy = { showPrivacyPolicy = true },
+                                modifier = Modifier.padding(innerPadding)
+                            )
+                        }
+                        else -> {
+                            PermissionRequestScreen(
+                                onRequestPermission = {
+                                    AccessibilityUtils.openAccessibilitySettings(this@MainActivity)
+                                },
+                                onCheckAgain = {
+                                    checkKey++ // Trigger LaunchedEffect to re-check
+                                },
+                                modifier = Modifier.padding(innerPadding)
+                            )
+                        }
                     }
                 }
             }

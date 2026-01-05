@@ -1,12 +1,12 @@
-package com.example.reelcounter.widget
+package com.reelcounter.widget
 
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.content.Intent
 import android.widget.RemoteViews
-import com.example.reelcounter.R
-import com.example.reelcounter.data.ReelRepository
+import com.reelcounter.R
+import com.reelcounter.data.ReelRepository
 
 /**
  * Widget provider for ReelCounter.
@@ -62,7 +62,7 @@ class ReelCounterWidget : AppWidgetProvider() {
             )
 
             // Make widget clickable to open app
-            val intent = android.content.Intent(context, com.example.reelcounter.ui.theme.MainActivity::class.java)
+            val intent = android.content.Intent(context, com.reelcounter.ui.theme.MainActivity::class.java)
             intent.flags = android.content.Intent.FLAG_ACTIVITY_NEW_TASK or android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK
             val pendingIntent = android.app.PendingIntent.getActivity(
                 context,

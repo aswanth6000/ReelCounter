@@ -1,6 +1,6 @@
-package com.example.reelcounter.domain
+package com.reelcounter.domain
 
-import com.example.reelcounter.data.ReelRepository
+import com.reelcounter.data.ReelRepository
 
 /**
  * Use case for incrementing the reel count.

@@ -30,6 +30,8 @@ ReelCounter is designed with privacy as the top priority:
 - ✅ **Open Source**: You can review the code to verify privacy claims
 - ✅ **Accessibility Justification**: Uses Accessibility API solely for digital wellbeing awareness
 
+📄 **[View Full Privacy Policy](PRIVACY_POLICY.md)**
+
 ## 📱 Screenshots
 
 _Add screenshots here if available_

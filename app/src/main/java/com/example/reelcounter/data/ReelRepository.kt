@@ -1,4 +1,4 @@
-package com.example.reelcounter.data
+package com.reelcounter.data
 
 import android.content.Context
 import java.util.Date

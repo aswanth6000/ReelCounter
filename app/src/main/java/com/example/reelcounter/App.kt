@@ -1,11 +1,11 @@
-package com.example.reelcounter
+package com.reelcounter
 
 import android.app.Application
 import androidx.work.Constraints
 import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
-import com.example.reelcounter.worker.DailyResetWorker
+import com.reelcounter.worker.DailyResetWorker
 import java.util.concurrent.TimeUnit
 
 class App : Application() {

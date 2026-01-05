@@ -1,4 +1,4 @@
-package com.example.reelcounter
+package com.reelcounter
 
 import org.junit.Test
 

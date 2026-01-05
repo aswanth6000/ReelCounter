@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.reelcounter"
+    namespace = "com.reelcounter"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.reelcounter"
+        applicationId = "com.reelcounter"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

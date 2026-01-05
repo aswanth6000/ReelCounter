@@ -1,12 +1,12 @@
-package com.example.reelcounter.accessibility
+package com.reelcounter.accessibility
 
 import android.accessibilityservice.AccessibilityService
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName
 import android.util.Log
 import android.view.accessibility.AccessibilityEvent
-import com.example.reelcounter.data.ReelRepository
-import com.example.reelcounter.widget.ReelCounterWidget
+import com.reelcounter.data.ReelRepository
+import com.reelcounter.widget.ReelCounterWidget
 
 class ReelAccessibilityService : AccessibilityService() {
 

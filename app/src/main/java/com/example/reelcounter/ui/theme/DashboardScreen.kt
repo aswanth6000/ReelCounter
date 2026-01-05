@@ -1,4 +1,4 @@
-package com.example.reelcounter.ui.theme
+package com.reelcounter.ui.theme
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -23,7 +23,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.reelcounter.data.ReelRepository
+import com.reelcounter.data.ReelRepository
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.*
@@ -32,6 +32,7 @@ import java.util.*
 @Composable
 fun DashboardScreen(
     repository: ReelRepository,
+    onShowPrivacyPolicy: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     var todayCount by remember { mutableStateOf(0) }
@@ -393,6 +394,19 @@ fun DashboardScreen(
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    TextButton(
+                        onClick = onShowPrivacyPolicy,
+                        colors = ButtonDefaults.textButtonColors(
+                            contentColor = BrightGreen
+                        )
+                    ) {
+                        Text(
+                            text = "View Privacy Policy",
+                            style = MaterialTheme.typography.bodySmall,
+                            fontWeight = FontWeight.Medium
+                        )
+                    }
                 }
             }
         }

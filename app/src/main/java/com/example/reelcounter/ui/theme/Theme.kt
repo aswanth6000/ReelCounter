@@ -1,4 +1,4 @@
-package com.example.reelcounter.ui.theme
+package com.reelcounter.ui.theme
 
 import android.app.Activity
 import android.os.Build

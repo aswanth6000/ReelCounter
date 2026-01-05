@@ -1,4 +1,4 @@
-package com.example.reelcounter.utils
+package com.reelcounter.utils
 
 import android.accessibilityservice.AccessibilityServiceInfo
 import android.content.Context

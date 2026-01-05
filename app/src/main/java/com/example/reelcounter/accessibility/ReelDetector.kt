@@ -1,4 +1,4 @@
-package com.example.reelcounter.accessibility
+package com.reelcounter.accessibility
 
 import android.os.Build
 import android.view.accessibility.AccessibilityEvent

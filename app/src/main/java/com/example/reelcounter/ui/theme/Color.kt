@@ -1,4 +1,4 @@
-package com.example.reelcounter.ui.theme
+package com.reelcounter.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
